@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lotes - FitControl</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-primary text-white py-2">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center gap-2">
+      <img src="IMAGEM/FitControl-Logo.jpeg" width="45" height="45" class="rounded">
+      <span class="h5 mb-0">FitControl</span>
+    </div>
+    <a href="index.html" class="btn btn-outline-light btn-sm">Sair</a>
+  </div>
+</header>
+
+<!-- MENU -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="paineldecontrole.html">Painel de Controle</a></li>
+      <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+      <li class="nav-item"><a class="nav-link active" href="lotes.html">Lotes</a></li>
+      <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+      <li class="nav-item"><a class="nav-link" href="relatorios.html">Relatórios</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- CONTEÚDO -->
+<main class="container my-4">
+
+  <h3 class="mb-3">Lotes em estoque</h3>
+
+  <!-- BUSCA (HTML PURO) -->
+  <div class="card p-3 mb-4 shadow-sm">
+    <label class="form-label fw-bold">Procurar lote ou produto</label>
+
+    <input 
+      type="text" 
+      class="form-control"
+      placeholder="Ex: LOT001 ou Whey Protein"
+      list="listaLotes"
+    >
+
+    <datalist id="listaLotes">
+      <option value="Whey Protein">
+      <option value="Creatina">
+      <option value="LOT001">
+      <option value="LOT002">
+    </datalist>
+
+    <small class="text-muted mt-2">
+      *Digite para ver sugestões (não filtra automaticamente)
+    </small>
+  </div>
+
+  <!-- TABELA -->
+  <div class="table-responsive">
+    <table class="table table-bordered table-hover">
+      <thead class="table-info text-center">
+        <tr>
+          <th>Produto</th>
+          <th>Lote</th>
+          <th>Validade</th>
+          <th>Quantidade</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody class="text-center">
+        <tr>
+          <td>Whey Protein</td>
+          <td>LOT001</td>
+          <td>10/06/2026</td>
+          <td>8</td>
+          <td class="text-warning fw-bold">15 dias</td>
+        </tr>
+
+        <tr>
+          <td>Creatina</td>
+          <td>LOT002</td>
+          <td>03/05/2026</td>
+          <td>12</td>
+          <td class="text-danger fw-bold">5 dias</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</main>
+
+<!-- RODAPÉ -->
+<footer class="bg-dark text-white text-center py-3">
+  <small>FitControl - Controle de validade</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

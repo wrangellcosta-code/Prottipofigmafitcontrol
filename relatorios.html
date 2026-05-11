@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relatórios - FitControl</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header class="bg-primary text-white py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="IMAGEM/FitControl-Logo.jpeg" alt="Logotipo da FitControl" width="45" height="45" class="rounded">
+      <span class="h5 mb-0">FitControl</span>
+      <a href="index.html" class="btn btn-outline-light btn-sm">Sair</a>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="paineldecontrole.html">Painel de Controle</a></li>
+        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+        <li class="nav-item"><a class="nav-link" href="lotes.html">Lotes</a></li>
+        <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link active" href="relatorios.html">Relatórios</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="card text-bg-danger p-2">
+          <h5>Perdas por vencimento</h5>
+          <p class="fs-3">R$ 4.280</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card text-bg-success p-2">
+          <h5>Perdas evitadas</h5>
+          <p class="fs-3">R$ 3.420</p>
+          <span>Eficácia: 68%</span>
+        </div>
+      </div>
+
+    </div>
+
+    <h3 class="mt-4">Campanhas ativas</h3>
+
+    <table class="table table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th>Produto</th>
+          <th>Validade</th>
+          <th>Clientes</th>
+          <th>Perda evitada</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Whey</td>
+          <td>15 dias</td>
+          <td>12</td>
+          <td>R$ 2.239</td>
+        </tr>
+        <tr>
+          <td>Creatina</td>
+          <td>8 dias</td>
+          <td>5</td>
+          <td>R$ 359</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>FitControl 2026 - Relatórios gerenciais</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

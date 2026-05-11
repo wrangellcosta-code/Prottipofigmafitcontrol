@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes - FitControl</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/syle.css">
+</head>
+
+<body>
+
+  <header class="bg-primary text-white py-2">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="IMAGEM/FitControl-Logo.jpeg" alt="Logotipo da FitControl" width="45" height="45" class="rounded">
+      <span class="h5 mb-0">FitControl</span>
+      <a href="index.html" class="btn btn-outline-light btn-sm">Sair</a>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="paineldecontrole.html">Painel de Controle</a></li>
+        <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+        <li class="nav-item"><a class="nav-link" href="lotes.html">Lotes</a></li>
+        <li class="nav-item"><a class="nav-link active" href="clientes.html">Clientes</a></li>
+        <li class="nav-item"><a class="nav-link" href="relatorios.html">Relatórios</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+
+    <h3>Adicionar Cliente</h3>
+
+    <form class="row g-3 mb-4">
+      <div class="col-md-4">
+        <input type="text" class="form-control" placeholder="Nome completo" required>
+      </div>
+
+      <div class="col-md-4">
+        <input type="email" class="form-control" placeholder="E-mail" required>
+      </div>
+
+      <div class="col-md-3">
+        <input type="tel" class="form-control" placeholder="Telefone" required>
+      </div>
+
+      <div class="col-md-1">
+        <button type="submit" class="btn btn-primary w-100">Adicionar</button>
+      </div>
+    </form>
+
+    <h3>Buscar Clientes</h3>
+
+    <div class="mb-3">
+      <input type="text" class="form-control" placeholder="Pesquisar por nome, e-mail ou telefone">
+    </div>
+
+    <h3>Clientes recentes</h3>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Telefone</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>João Silva</td>
+          <td>joao@email.com</td>
+          <td>(27) 99999-1111</td>
+          <td>Ativo</td>
+        </tr>
+        <tr>
+          <td>Maria Oliveira</td>
+          <td>maria@fit.com</td>
+          <td>(27) 98888-2222</td>
+          <td>Ativo</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>FitControl 2026 - Cadastro de Clientes</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
